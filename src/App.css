@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #EF6C22;
+    --title-color: #4D4F5C;
+    --text-color: #43425D;
+    --light-orange: #F29200;
+    --light-purple:#B8A3CF;
+    --gray-dark: #42485D;
+    --gray-darkest: #222b2f;
+    --sidebar-item-height: 50px;
+    --sidebar-item-height-desktop: 70px;
+    --sidebar-width: 80px;
+    --sidebar-height: 60px;
+    --sidebar-z-index: 1000;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #F0F0F5;
+    -webkit-font-smoothing: antialiased;
+    color: var(--text-color);
+  }
+
+  body, input, button {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color);
+    font-family: Ubuntu;
+  }

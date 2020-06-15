@@ -1,0 +1,16 @@
+.ui.menu.top-menu {
+    border: none; /*Remove Semantic UI's bottom border*/
+
+    .logo {
+      width: 17rem;
+      margin-left: var(--sidebar-width);
+    }
+    .nav-container {
+      justify-content: space-between; /*maximize whitespace between elements*/
+      flex-grow: 1; /* take available space in the flex container */
+      padding: 0;
+    }
+    .header-icon {
+        color: #BCBCCB;
+      }
+  }
