@@ -7,8 +7,9 @@
     --gray-dark: #42485D;
     --gray-darkest: #222b2f;
     --sidebar-item-height: 50px;
-    --sidebar-item-height-desktop: 70px;
-    --sidebar-width: 80px;
+    --sidebar-icon-size: 10;
+    --sidebar-item-height-desktop: 80px;
+    --sidebar-width: 60px;
     --sidebar-height: 60px;
     --sidebar-z-index: 1000;
   }

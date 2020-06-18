@@ -11,9 +11,12 @@ export const Menu = styled.div`
 
   }
 
-span{
+    span{
     color:#FFFFFF;
-}
+
+    }
+
+
   .sideBarList {
     display: flex;
     justify-content: space-around;
@@ -31,29 +34,21 @@ span{
     text-decoration: none;
     font-weight: 600;
     color: #fff;
-    background-color:#A5A4BF;
+    background-color:#A5A4B2;
     }
 
-    .itemLink:hover {
-        background-color: #FF6565 ;
+    .itemLink Line{
+        justify-content: none;
     }
-
     .itemText {
         display: none;
     }
-
-    .itemText h1 {
-    font-size:32px;
-    color:#fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    }
-
-  .itemContainer {
+    .itemContainer {
     flex: 1;
-  }
-
+    }
+   #activated{
+     color: #FF6565;
+    }
 
   @media only screen and (min-width: 1200px) {
 
@@ -68,12 +63,24 @@ span{
     }
     .sideBarContainer:hover {
       width: 250px;
+        .itemLink{
+            background: #0000001A 0% 0% no-repeat padding-box;
+            opacity: 1;
+
+        }
+        .itemLink:hover {
+            background-color: #AD5D5B ;
+        }
       .itemText {
         display: block;
+
+      }
+      .sideBarTitle {
+        display: flex;
       }
     }
 
-      .sideBarList {
+    .sideBarList {
         display: flex;
         flex-direction: column;
         margin-top: var(--spacing-medium);
@@ -91,4 +98,36 @@ span{
       }
   }
 
+`;
+
+export const Title = styled.div`
+    background-color: #0000001A;
+    display: none;
+    height: 4em;
+    transition: 0.2s ease;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:10px;
+  flex:1;
+    background-color: #0000001A;
+    #logo{
+        color: #fff;
+
+    }
+
+    @media only screen and (max-width: 1000px) {
+        #logo{
+            display:none;
+        }
+    }
+`;
+
+export const Line = styled.div`
+width:10px;
+height: var(--sidebar-item-height);
+margin:-25px;
+padding:0px;
+justify-content: start !important;
+background-color: #FF6565;
 `;

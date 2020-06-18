@@ -7,22 +7,23 @@ import { FaUsers, FaReceipt } from 'react-icons/fa';
 import {
   IoMdPodium, IoMdTrophy, IoMdCalendar, IoMdLogOut,
 } from 'react-icons/io';
-import { Menu } from './style';
+import { Menu, Title, Line } from './style';
 
 const SideBar = () => (
   <Menu>
+
     <nav className="sideBarContainer">
+    <Title className="sideBarTitle">
+    <h1 id="logo">WESPORTS</h1>
+    </Title>
       <ul className="sideBarList">
-            <li id="logo" className="itemContainer">
-            <div className="itemText">
-                <h1>WeSports</h1>
-            </div>
-            </li>
             <li className="itemContainer">
+
                 <Link className="itemLink" to="/match">
+                <Line />
                     <div>
-                        <span>
-                         <IoMdCalendar />
+                        <span id="activated">
+                         <IoMdCalendar size={25} />
                         </span>
                     </div>
 
@@ -32,12 +33,11 @@ const SideBar = () => (
                 </Link>
             </li>
 
-
             <li className="itemContainer">
                 <Link className="itemLink" to="/dashboard">
                     <div>
                         <span>
-                        <MdDashboard />
+                        <MdDashboard size={22} />
                         </span>
                     </div>
 
@@ -51,7 +51,7 @@ const SideBar = () => (
                 <Link className="itemLink" to="/ranking">
                     <div>
                         <span>
-                        <IoMdPodium />
+                        <IoMdPodium size={22} />
                         </span>
                     </div>
 
@@ -61,12 +61,11 @@ const SideBar = () => (
                 </Link>
             </li>
 
-
             <li className="itemContainer">
                 <Link className="itemLink" to="/torneios">
                     <div>
                         <span>
-                        <IoMdTrophy />
+                        <IoMdTrophy size={22} />
                         </span>
                     </div>
 
@@ -76,12 +75,11 @@ const SideBar = () => (
                 </Link>
             </li>
 
-
             <li className="itemContainer">
                 <Link className="itemLink" to="/historico">
                     <div>
                         <span>
-                        <FaReceipt />
+                        <FaReceipt size={22} />
                         </span>
                     </div>
                     <div className="itemText">
@@ -94,7 +92,7 @@ const SideBar = () => (
                 <Link className="itemLink" to="/equipes">
                     <div>
                         <span>
-                        <FaUsers />
+                        <FaUsers size={22} />
                         </span>
                     </div>
                     <div className="itemText">
@@ -106,7 +104,7 @@ const SideBar = () => (
                 <Link className="itemLink" to="/">
                     <div>
                         <span>
-                        <IoMdLogOut />
+                        <IoMdLogOut size={22} />
                         </span>
                     </div>
                     <div className="itemText">
